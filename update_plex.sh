@@ -9,10 +9,9 @@ echo "Unpacking zip"
 tar xzf "PlexMediaServer-${version}-FreeBSD-amd64.tar.bz2"
 
 echo "Updating current plex"
-killall -q -9 Plex*
+pkill -9 "Plex*"
 rm -rf PlexMediaServer
 mv "./PlexMediaServer-${version}" PlexMediaServer
-#Cleanup
 rm "PlexMediaServer-${version}-FreeBSD-amd64.tar.bz2"
 
 cd PlexMediaServer
