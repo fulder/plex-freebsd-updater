@@ -16,5 +16,5 @@ rm "PlexMediaServer-${version}-FreeBSD-amd64.tar.bz2"
 
 cd PlexMediaServer
 ./start.sh
-
+cd ..
 
