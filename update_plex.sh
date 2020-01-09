@@ -13,5 +13,4 @@ rm -rf PlexMediaServer
 mv "./PlexMediaServer-${version}" PlexMediaServer
 
 #Cleanup
-rm -r "PlexMediaServer-${version}"
 rm "PlexMediaServer-${version}-FreeBSD-amd64.tar.bz2"
