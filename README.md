@@ -2,9 +2,7 @@
 
 ## Pre-requirements
 
-```bash
-pkg install -y bash ca_root_nss jq
-```
+* `pkg install -y bash ca_root_nss jq`
 
 ## Install pms rc.d script
 * Copy paste the `pms` file into `/etc/rc.d/pms`
@@ -14,4 +12,4 @@ pkg install -y bash ca_root_nss jq
 * Inside /etc/rc.conf add the line `pms_enable="YES"`
 
 ## Updating plex
-`/etc/rc.d/pms update`
+* `/etc/rc.d/pms update`
