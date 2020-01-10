@@ -6,7 +6,7 @@ version=$(cat 5.json | jq -r '.computer.FreeBSD.version')
 rm 5.json
 
 echo "Downloading plex server with version: ${version}"
-fetch "https://downloads.plex.tv/plex-media-server-new/${version}/freebsd/PlexMediaServer-${version}-FreeBSD-amd64.tar.bz2"
+fetch "${download_url}"
 
 echo "Unpacking zip"
 tar xzf "PlexMediaServer-${version}-FreeBSD-amd64.tar.bz2"
