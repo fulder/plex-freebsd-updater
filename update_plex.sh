@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-version=1.18.4.2171-ac2afe5f8
+fetch https://plex.tv/pms/downloads/5.json
+download_url=$(cat 5.json | jq -r '.computer.FreeBSD.releases[0].url')
+version=$(cat 5.json | jq -r '.computer.FreeBSD.version')
+rm 5.json
 
 echo "Downloading plex server with version: ${version}"
 fetch "https://downloads.plex.tv/plex-media-server-new/${version}/freebsd/PlexMediaServer-${version}-FreeBSD-amd64.tar.bz2"
