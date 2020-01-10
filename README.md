@@ -17,7 +17,7 @@ Change the version at the top of the script and run:
 # Auto starting plex
 
 ```bash
-mkdir /usr/local/etc/rc.d/start_plex.sh
+mkdir -p /usr/local/etc/rc.d
 chmod +x /usr/local/etc/rc.d/start_plex.sh
 ```
  
