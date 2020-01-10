@@ -10,8 +10,6 @@ pkg install -y bash ca_root_nss jq
 ```
 
 ## Running updater
-Change the version at the top of the script and run:
-
 `bash update_plex.sh`
 
 # Auto starting plex
