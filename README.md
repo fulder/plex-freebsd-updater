@@ -18,6 +18,7 @@ Change the version at the top of the script and run:
 
 ```bash
 mkdir -p /usr/local/etc/rc.d
+touch /usr/local/etc/rc.d/start_plex.sh
 chmod +x /usr/local/etc/rc.d/start_plex.sh
 ```
  
