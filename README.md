@@ -6,7 +6,7 @@ In fresh FreeBSD install run following commands:
 
 ```bash
 pkg update
-pkg install -y bash ca_root_nss
+pkg install -y bash ca_root_nss jq
 ```
 
 ## Running updater
