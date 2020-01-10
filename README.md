@@ -9,19 +9,12 @@ pkg update
 pkg install -y bash ca_root_nss jq
 ```
 
-## Running updater
-`bash update_plex.sh`
+## Install pms rc.d script
+* Copy paste the `pms` file into `/etc/rc.d/pms
+* `chmod +x /etc/rc.d/pms`
 
-# Auto starting plex
+## Enable the pms 
+* Inside /etc/rc.conf add the line `pms_enable="YES"`
 
-```bash
-mkdir -p /usr/local/etc/rc.d
-touch /usr/local/etc/rc.d/start_plex.sh
-chmod +x /usr/local/etc/rc.d/start_plex.sh
-```
- 
-Add the startup command to `start_plex.sh` script, something like:
-```bash
-cd /PlexMediaServer
-./start
-```
+## Updating plex
+`/etc/rc.d/pms update`
