@@ -13,3 +13,16 @@ pkg install -y bash wget
 Change the version at the top of the script and run:
 
 `bash update_plex.sh`
+
+# Auto starting plex
+
+```bash
+mkdir /usr/local/etc/rc.d/start_plex.sh
+chmod +x /usr/local/etc/rc.d/start_plex.sh
+```
+ 
+Add the startup command to `start_plex.sh` script, something like:
+```bash
+cd /PlexMediaServer
+./start
+```
