@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+echo "Finding latest plex version"
 fetch https://plex.tv/pms/downloads/5.json
 download_url=$(cat 5.json | jq -r '.computer.FreeBSD.releases[0].url')
 version=$(cat 5.json | jq -r '.computer.FreeBSD.version')
