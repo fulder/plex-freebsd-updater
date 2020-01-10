@@ -6,7 +6,7 @@ In fresh FreeBSD install run following commands:
 
 ```bash
 pkg update
-pkg install -y bash wget
+pkg install -y bash
 ```
 
 ## Running updater

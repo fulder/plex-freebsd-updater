@@ -3,7 +3,7 @@
 version=1.18.4.2171-ac2afe5f8
 
 echo "Downloading plex server with version: ${version}"
-wget "https://downloads.plex.tv/plex-media-server-new/${version}/freebsd/PlexMediaServer-${version}-FreeBSD-amd64.tar.bz2"
+fetch "https://downloads.plex.tv/plex-media-server-new/${version}/freebsd/PlexMediaServer-${version}-FreeBSD-amd64.tar.bz2"
 
 echo "Unpacking zip"
 tar xzf "PlexMediaServer-${version}-FreeBSD-amd64.tar.bz2"
